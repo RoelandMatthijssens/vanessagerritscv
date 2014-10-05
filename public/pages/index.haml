@@ -1,3 +1,15 @@
-.header
-	%img{src:"assets/img/header.jpg"}
-<iframe src="http://docs.google.com/gview?url=http://cv.vanessagerrits.be/CV Vanessa Gerrits Copywrite Kunstmaan.pdf&embedded=true" style="width:100%; height:99%;" frameborder="0"></iframe>
+.content
+	.main_content
+		.header_image
+			%img{src:"assets/img/header.jpg"}
+		.main_body
+			Kies je favoriete cv-stijl;
+			.cv_link.herfst_link{data: {cv: 'herfstcv'}}
+				%img{src:"assets/img/cvsiteherfstbutton.png"}
+			.cv_link.serieus_link{data: {cv:'serieuscv1,serieuscv2'}}
+				%img{src:"assets/img/cvsiteserieusbutton.png"}
+			.cv_link.beknopt_link{data: {cv:'beknoptcv'}}
+				%img{src:"assets/img/cvsitebeknoptbutton.png"}
+			.cv_link.sprookjesachtig_link{data: {cv:'sprookjescv'}}
+				%img{src:"assets/img/cvsitesprookjes.png"}
+	.side_content.hidden
