@@ -18,7 +18,6 @@ function openCv(object){
 	container.html("");
 	for(var i in cvNames){
 		var cvName = cvNames[i];
-		console.log(cvName);
 		var cvPath = "assets/img/"+cvName+".jpg";
 		var img = $("<img/>");
 		img.attr("src", cvPath);
@@ -29,9 +28,10 @@ function openCv(object){
 function openSideContent(){
 	var sideContent = $(".side_content");
 	var mainContent = $(".main_content");
+	sideContent.css("height", mainContent.height());
 	if(sideContent.hasClass("hidden")){
 		mainContent.animate({
-			marginLeft: "-=20%"
+			marginLeft: "-=25%"
 		}, 500, function(){
 			sideContent.removeClass("hidden");
 		});
@@ -44,6 +44,6 @@ function closeSideContent(){
 	var mainContent = $(".main_content");
 	sideContent.addClass("hidden");
 		mainContent.animate({
-			marginLeft: "+=20%"
+			marginLeft: "+=25%"
 		}, 500);
 }
